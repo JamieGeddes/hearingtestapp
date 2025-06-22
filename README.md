@@ -201,3 +201,7 @@ This application is provided for educational and informational purposes. Users a
 ---
 
 *For questions about hearing health, always consult qualified healthcare professionals.*
+
+## 🤖 Development Note
+
+This application was created entirely using [Claude Code](https://claude.ai/code), as an experiment in AI-assisted software development. The entire codebase, including the HTML, CSS, JavaScript implementation, and this documentation, was generated through AI collaboration to explore the capabilities of modern AI code generation tools.
