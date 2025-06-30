@@ -75,18 +75,40 @@ The application uses the **Web Audio API** to generate pure tone sine waves at s
 ## 🚀 Getting Started
 
 ### Requirements
+- Node.js (v16 or higher)
+- npm
 - Modern web browser with Web Audio API support
 - Headphones or earbuds (REQUIRED)
 - Quiet environment
 - Approximately 10 minutes
 
-### Installation
-1. Download all files to a local directory:
-   - `index.html`
-   - `script.js`
-   - `styles.css`
+### Installation & Development
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Open `index.html` in a web browser
+2. Build the TypeScript application:
+   ```bash
+   npm run build
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run serve
+   ```
+
+### Development Commands
+- `npm run build` - Compile TypeScript to JavaScript
+- `npm run dev` - Watch mode for development
+- `npm run serve` - Start HTTP server for testing
+- `npm run lint` - Run ESLint
+- `npm run typecheck` - Type checking
+- `npm run clean` - Remove build files
+- `npm run deploy` - Build and serve application
+
+### Production Deployment
+Deploy the contents of the `dist/` folder to your web server.
 
 ### Usage
 1. **Put on headphones** before starting
@@ -178,19 +200,31 @@ Consult a qualified audiologist if you experience:
 
 ### Files Structure
 ```
-hearing-test/
-├── index.html          # Main application interface
-├── script.js           # Core functionality and Web Audio API
-├── styles.css          # Responsive styling and design
-└── README.md           # This documentation
+hearingtestapp/
+├── src/                # TypeScript source files
+│   ├── script.ts      # Main application logic (TypeScript)
+│   └── types.ts       # Type definitions
+├── dist/              # Built files for deployment
+│   ├── index.html     # Production HTML
+│   ├── script.js      # Compiled JavaScript
+│   ├── styles.css     # Styles
+│   └── *.map         # Source maps for debugging
+├── index.html         # Development HTML
+├── styles.css         # CSS styles
+├── tsconfig.json      # TypeScript configuration
+├── package.json       # Dependencies and scripts
+├── .eslintrc.json     # ESLint configuration
+└── README.md          # This documentation
 ```
 
 ### Key Technologies
+- **TypeScript**: Strongly typed JavaScript for better development experience
 - **Web Audio API**: Audio generation and processing
 - **HTML5 Canvas**: Results visualization
 - **CSS Grid/Flexbox**: Responsive layout
-- **ES6 Modules**: Modern JavaScript features
+- **ES2020 Modules**: Modern JavaScript features
 - **Blob API**: File download functionality
+- **ESLint**: Code quality and consistency
 
 ## 📄 License and Usage
 
